@@ -10,6 +10,7 @@
   --white-txt-color: #ffffff;
   --grey-txt-color: #757575;
   --btn-txt-color: #188ce8;
+  --socials-color: #afb1b8;
 
   /*Background color*/
   --light-color: #eeeeee;
@@ -59,7 +60,12 @@ address {
 .list-forvard-img,
 .team-list-item,
 .list-item-footer,
-.address-link-footer {
+.address-link-footer,
+.socials-item,
+.socials-link,
+.socials,
+.team-padd,
+.socials-icon {
   list-style: none;
   text-decoration: none;
 }
@@ -110,6 +116,10 @@ address {
   color: var(--logo-txt-color);
 }
 
+.header-contacts {
+  /* fill: currentColor; */
+}
+
 .list-header {
   display: flex;
   align-items: center;
@@ -136,13 +146,18 @@ address {
 
 .list-item:last-child {
   margin-right: 0px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .address-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--grey-txt-color);
+  fill: currentColor;
 }
 
 .address-link:hover,
@@ -157,7 +172,10 @@ address {
   background-color: #2f303a;
   /* height: 600px; */
   text-align: center;
-  background-image: url(../images);
+  background-image: url(../images/effective/Img-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: contain;
 }
 
 .main-title {
@@ -218,6 +236,33 @@ address {
   padding: 30px 0px;
 }
 
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--socials-color);
+  background-color: var(--white-txt-color);
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--light-color);
+  background-color: var(--accent-txt-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
 .team-conteiner {
   text-align: center;
 }
@@ -246,6 +291,7 @@ address {
 }
 
 .section-user-subtitle {
+  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: calc(19 / 16);
